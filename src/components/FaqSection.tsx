@@ -111,10 +111,10 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
           transition={{ duration: 0.3, delay: 0.1 }}
         >
           <h3 className="text-xl font-black text-white uppercase tracking-tight">
-            Ready to trade with mechanical clarity?
+            Continue with the Swell Point Indicator
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-            Join hundreds of traders who replaced market confusion with structured execution rules.
+            Complete your order to access the Swell Point educational framework.
           </p>
           <div>
             <button
@@ -122,7 +122,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
               className="neon-glow-btn text-white text-xs sm:text-sm font-extrabold uppercase px-8 py-3.5 rounded-xl inline-flex items-center gap-2 border border-purple-400/40 cursor-pointer shadow-lg"
             >
               <Sparkles className="w-4 h-4 text-amber-300" />
-              <span>GET YOUR SWELL POINT</span>
+              <span>GET SWELL POINT INDICATOR</span>
             </button>
           </div>
         </motion.div>

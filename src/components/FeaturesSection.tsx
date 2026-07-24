@@ -118,7 +118,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({
             onClick={onOpenLeadModal}
             className="neon-glow-btn text-white text-xs sm:text-sm font-extrabold uppercase px-8 py-3.5 rounded-xl inline-flex items-center gap-2 border border-purple-400/40 shadow-xl"
           >
-            <span>GET YOUR SWELL POINT</span>
+            <span>GET SWELL POINT INDICATOR</span>
           </button>
         </div>
 

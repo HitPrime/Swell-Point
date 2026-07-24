@@ -9,9 +9,9 @@ export const FooterSection: React.FC = () => {
         {/* Logo */}
         <img src={logoImg} alt="Trade Structure Pro" className="h-16 w-auto object-contain" />
 
-        {/* Risk Warning */}
+        {/* Disclaimer */}
         <p className="text-[11px] leading-relaxed max-w-2xl text-center text-slate-400 font-mono">
-          <strong>Risk Warning:</strong> Trading crypto assets, equities, and derivatives involves substantial risk of loss and is not suitable for every investor. Content in the Swell Point is for educational purposes only and does not constitute financial or investment advice.
+          <strong>Disclaimer:</strong> The Swell Point Indicator is provided for educational purposes only. No outcomes or results are promised or implied. Users are responsible for their own decisions when applying the concepts presented.
         </p>
 
         {/* Copyright */}

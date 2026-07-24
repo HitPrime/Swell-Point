@@ -42,11 +42,11 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({
         <div className="text-center space-y-4 mb-16">
 
           <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans">
-            WHAT YOU WILL <span className="text-purple-400">MASTER INSIDE</span>
+            WHAT'S <span className="text-purple-400">INCLUDED</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
-            4 comprehensive modules engineered to take you from basic chart confusion to institutional market structure execution.
+            Explore the educational framework, tools, and resources included with the Swell Point Indicator.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({
                   className="neon-glow-btn px-8 py-3 rounded-xl text-white text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 cursor-pointer border border-purple-400/40 shadow-lg"
                 >
                   <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>GET YOUR SWELL POINTS</span>
+                  <span>GET SWELL POINT INDICATOR</span>
                 </button>
               </div>
 
@@ -129,10 +129,10 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({
                 <div className="flex items-center justify-between border-b border-purple-900/40 pb-3">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-purple-400" />
-                    <span className="text-xs font-mono font-bold text-slate-200">MECHANICAL CHECKLIST</span>
+                <span className="text-xs font-mono font-bold text-slate-200">STRUCTURED CHECKLIST</span>
                   </div>
                   <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2 py-0.5 rounded">
-                    100% VERIFIED RULESET
+                    VERIFIED FRAMEWORK
                   </span>
                 </div>
 

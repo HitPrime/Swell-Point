@@ -21,10 +21,10 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
         {/* Section Headline */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight font-sans">
-            WHAT THEY SAY <span className="text-purple-400">(REAL RESULTS)</span>
+            COMMUNITY <span className="text-purple-400">FEEDBACK</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Real feedback from traders in the community.
+            Experiences shared by members using the Swell Point educational framework.
           </p>
         </div>
 

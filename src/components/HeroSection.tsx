@@ -34,15 +34,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             
             {/* Main Hero Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-black tracking-tight text-white uppercase leading-[1.08] font-sans">
-              TRADE WITH STRUCTURE.{' '}
+              GET THE SWELL POINT{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-purple-400 to-indigo-300 drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]">
-                FINALLY UNDERSTAND IT.
+                INDICATOR
               </span>
             </h1>
 
             {/* Body Paragraph */}
             <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
-              Get the Swell Point that walks you through trading from step one, in plain English. If you've watched fifty videos and still feel lost, that's not on you. Nobody is born knowing this stuff.
+              The Swell Point Indicator is designed to help traders follow a structured approach to market analysis through a clear educational framework. Everything inside is organized to support better understanding, consistency, and decision-making.
             </p>
 
             {/* Prominent Call-to-Action (CTA) Button */}
@@ -53,7 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 id="hero-cta-btn"
                 className="w-full sm:w-auto neon-glow-btn text-white text-sm sm:text-base font-extrabold tracking-wider uppercase px-8 py-4 rounded-xl flex items-center justify-center gap-3 border border-purple-300/40 cursor-pointer group"
               >
-                <span>GET YOUR SWELL POINT</span>
+                <span>GET SWELL POINT INDICATOR</span>
                 <ArrowRight className="w-5 h-5 text-purple-200 group-hover:translate-x-1.5 transition-transform" />
               </button>
             </div>

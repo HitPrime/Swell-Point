@@ -59,7 +59,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
 ---------------------------------------------------
 - Maintain a minimum 1:3 Risk-to-Reward ratio.
 - Position Size = (Account Balance * Risk %) / (Entry - Stop Loss).
-- Take 50% profit at 1:2 R:R and move Stop Loss to Breakeven.
+- Set Exit Target 1 at 1:2 R:R and move Stop Level to Breakeven.
 
 © 2026 Cassius Cuvee. All rights reserved.
     `.trim();
@@ -98,7 +98,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
                   <span>SWELL POINT — INSTANT ACCESS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
-                  GET YOUR SWELL POINT NOW
+                  GET SWELL POINT INDICATOR NOW
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 mt-1">
                   Enter your details below to unlock the 4-part PDF blueprint and interactive chapter reader instantly.
@@ -147,7 +147,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
                   type="submit"
                   className="w-full neon-glow-btn text-white text-sm font-extrabold uppercase py-3.5 rounded-xl flex items-center justify-center gap-2 border border-purple-400/40 cursor-pointer shadow-lg mt-2"
                 >
-                  <span>GET YOUR SWELL POINT</span>
+                  <span>GET SWELL POINT INDICATOR</span>
                 </button>
 
                 <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400 font-mono pt-1">

@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="neon-glow-btn text-white text-xs sm:text-sm font-bold tracking-wide uppercase px-4 sm:px-5 py-2.5 rounded-lg flex items-center gap-2 border border-purple-400/40"
           >
             <Sparkles className="w-4 h-4 text-amber-300 animate-pulse" />
-            <span>GET YOUR SWELL POINT</span>
+            <span>GET SWELL POINT INDICATOR</span>
           </button>
         </div>
       </div>
