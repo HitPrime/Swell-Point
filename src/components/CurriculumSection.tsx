@@ -117,7 +117,7 @@ export const CurriculumSection: React.FC<CurriculumSectionProps> = ({
                   className="neon-glow-btn px-8 py-3 rounded-xl text-white text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 cursor-pointer border border-purple-400/40 shadow-lg"
                 >
                   <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>GET SWELL POINT INDICATOR</span>
+                  <span>GET YOUR SWELL POINT</span>
                 </button>
               </div>
 

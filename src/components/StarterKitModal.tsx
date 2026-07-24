@@ -41,7 +41,7 @@ CHAPTER 1: THE MAP - STEP-BY-STEP TRADING BLUEPRINT
 ---------------------------------------------------
 - Identify 4H Swing Highs & Lows to establish daily bias.
 - Locate Fair Value Gaps (FVG) and Liquidity Sweep zones.
-- Never trade against higher-timeframe momentum.
+- Never trade against higher-timeframe structure without confirmation.
 
 CHAPTER 2: THE KIT - ESSENTIAL TOOLS & CHARTS
 ---------------------------------------------------
@@ -98,7 +98,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
                   <span>SWELL POINT — INSTANT ACCESS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
-                  GET SWELL POINT INDICATOR NOW
+                  GET YOUR SWELL POINT NOW
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 mt-1">
                   Enter your details below to unlock the 4-part PDF blueprint and interactive chapter reader instantly.
@@ -147,7 +147,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
                   type="submit"
                   className="w-full neon-glow-btn text-white text-sm font-extrabold uppercase py-3.5 rounded-xl flex items-center justify-center gap-2 border border-purple-400/40 cursor-pointer shadow-lg mt-2"
                 >
-                  <span>GET SWELL POINT INDICATOR</span>
+                  <span>GET YOUR SWELL POINT</span>
                 </button>
 
                 <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400 font-mono pt-1">

@@ -1,14 +1,27 @@
 import React from 'react';
-import t1 from '../assets/images/t1.png';
-import t2 from '../assets/images/t2.png';
-import t3 from '../assets/images/t3.png';
-import t4 from '../assets/images/t4.png';
-import t5 from '../assets/images/t5.jpg';
-import t6 from '../assets/images/t6.png';
+import { Quote } from 'lucide-react';
 
 interface TestimonialsSectionProps {
   onOpenLeadModal: () => void;
 }
+
+const quotes = [
+  {
+    name: "ATGL MOD",
+    date: "7:03 PM",
+    text: "thankyou so much btw your advice and facts on stream helped me so much started making so much progress recent past days",
+  },
+  {
+    name: "DiamondsHandsJackpot",
+    date: "8:12 AM",
+    text: "If you are not in premium you are missing out. @Cassius Cuvée TA is the real deal — top class strategy and framework.",
+  },
+  {
+    name: "Bankai-CoLo",
+    date: "May 6, 2025",
+    text: "best discord guys... Cassius Cuvee is the real deal. Top class strategy learnt alot about the short weakness and long strength. More greatness to come.",
+  },
+];
 
 export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpenLeadModal }) => {
   return (
@@ -24,38 +37,26 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
             COMMUNITY <span className="text-purple-400">FEEDBACK</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Experiences shared by members using the Swell Point educational framework.
+            What traders are saying about the Swell Point educational framework.
           </p>
         </div>
 
-        {/* ROW 1: Wide/landscape images — t4, t2, t5 — each shows fully */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 items-start">
-          <div className="rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t4} alt="Testimonial 4" className="w-full h-auto block" />
-          </div>
-          <div className="rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t2} alt="Testimonial 2" className="w-full h-auto block" />
-          </div>
-          <div className="rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t5} alt="Testimonial 5" className="w-full h-auto block" />
-          </div>
-        </div>
-
-        {/* ROW 2: Same-size square images — t1 & t6 side by side */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 items-start">
-          <div className="rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t1} alt="Testimonial 1" className="w-full h-auto block" />
-          </div>
-          <div className="rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t6} alt="Testimonial 6" className="w-full h-auto block" />
-          </div>
-        </div>
-
-        {/* ROW 3: Tall portrait image — t3 centered */}
-        <div className="flex justify-center">
-          <div className="w-full sm:w-1/2 lg:w-2/5 rounded-2xl overflow-hidden border border-purple-500/25 shadow-xl hover:border-purple-400/50 transition-all">
-            <img src={t3} alt="Testimonial 3" className="w-full h-auto block" />
-          </div>
+        {/* Quote Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {quotes.map((q, i) => (
+            <div
+              key={i}
+              className="glass-noir-card rounded-2xl border border-purple-500/25 p-6 flex flex-col gap-4 shadow-xl hover:border-purple-400/50 transition-all"
+            >
+              <Quote className="w-6 h-6 text-purple-400 shrink-0" />
+              <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-sans flex-grow">
+                "{q.text}"
+              </p>
+              <div className="pt-3 border-t border-purple-900/40">
+                <div className="font-extrabold text-sm text-white font-mono">{q.name}</div>
+              </div>
+            </div>
+          ))}
         </div>
 
       </div>

@@ -17,12 +17,12 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
 
         {/* Headline */}
         <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans">
-          READY TO GET THE <span className="text-purple-400">SWELL POINT INDICATOR?</span>
+          ACCESS THE <span className="text-purple-400">SWELL POINT INDICATOR</span>
         </h2>
 
         {/* Body Text */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          Everything you need to begin exploring the Swell Point educational framework is ready. Built for traders who value structure, consistency, and a clear learning process.
+          The Swell Point Indicator is ready for instant access. Complete your purchase and begin working through the full educational framework today.
         </p>
 
         {/* CTA Button */}
@@ -32,25 +32,11 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
             id="final-cta-btn"
             className="w-full sm:w-auto neon-glow-btn text-white text-base sm:text-lg font-black tracking-wider uppercase px-10 py-5 rounded-2xl flex items-center justify-center gap-3 border border-purple-300/50 shadow-2xl shadow-purple-900/80 cursor-pointer group hover:scale-[1.02] transition-all"
           >
-            <span>GET SWELL POINT INDICATOR</span>
+            <span>GET STARTED TODAY</span>
             <ArrowRight className="w-6 h-6 text-purple-200 group-hover:translate-x-2 transition-transform" />
           </button>
 
-          {/* Trust Badges */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-300 pt-2">
-            <div className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Instant Access</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Lock className="w-4 h-4 text-purple-400" />
-              <span>Secure Checkout</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-amber-400" />
-              <span>PDF & Interactive Reader</span>
-            </div>
-          </div>
+        
         </div>
 
       </div>

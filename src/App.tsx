@@ -1,27 +1,19 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
-import { CurriculumSection } from './components/CurriculumSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { FooterSection } from './components/FooterSection';
 import { StarterKitModal } from './components/StarterKitModal';
-import { ModuleItem } from './types';
 
 const PURCHASE_URL = 'https://buyswellpoint.com/swell-point';
 
 export default function App() {
-  const [selectedModule, setSelectedModule] = useState<ModuleItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePurchase = () => {
     window.open(PURCHASE_URL, '_blank', 'noopener,noreferrer');
-  };
-
-  const handleSelectModule = (module: ModuleItem) => {
-    setSelectedModule(module);
-    setIsModalOpen(true);
   };
 
   return (
@@ -33,11 +25,6 @@ export default function App() {
 
       <main className="flex-grow">
         <HeroSection
-          onOpenLeadModal={handlePurchase}
-        />
-
-        <CurriculumSection
-          onSelectModule={handleSelectModule}
           onOpenLeadModal={handlePurchase}
         />
 
@@ -53,7 +40,7 @@ export default function App() {
       <StarterKitModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        initialModule={selectedModule}
+        initialModule={null}
       />
     </div>
   );

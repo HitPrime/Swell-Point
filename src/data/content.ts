@@ -1,18 +1,11 @@
 import { ModuleItem, TestimonialItem, CryptoTicker } from '../types';
 
 export const HERO_CONTENT = {
-  badge: "SWELL POINT INDICATOR - 600+ TRADERS JOINED",
-  headline: "GET THE SWELL POINT INDICATOR",
-  body: "The Swell Point Indicator is designed to help traders follow a structured approach to market analysis through a clear educational framework. Everything inside is organized to support better understanding, consistency, and decision-making.",
+  badge: "OFFICIAL SWELL POINT INDICATOR — INSTANT ACCESS",
+  headline: "THE SWELL POINT INDICATOR",
+  body: "A structured educational tool built to help traders develop a clear, repeatable approach to reading market conditions. Used by traders who want process over guesswork.",
   ctaText: "GET SWELL POINT INDICATOR",
-  disclaimer: "SWELL POINT INDICATOR - INSTANT ACCESS",
-  asSeenOnHeader: "AS SEEN ON WSJ / CNBC / SQUAWK ON THE STREET",
-  mediaLogos: [
-    { name: "WALL STREET JOURNAL", code: "WSJ", quote: "Simplifying market structure for retail traders" },
-    { name: "CNBC", code: "CNBC", quote: "The structured blueprint breaking down market volatility" },
-    { name: "SQUAWK ON THE STREET", code: "SQUAWK", quote: "Actionable structure rules over speculative hype" },
-    { name: "BLOOMBERG MARKETS", code: "BLOOMBERG", quote: "A masterclass in mechanical execution" }
-  ]
+  disclaimer: "SWELL POINT INDICATOR — INSTANT ACCESS UPON PURCHASE",
 };
 
 export const MODULES_DATA: ModuleItem[] = [
@@ -20,20 +13,20 @@ export const MODULES_DATA: ModuleItem[] = [
     id: "module-1",
     number: "01",
     title: "THE MAP",
-    subtitle: "Understand the complete framework before applying the concepts.",
+    subtitle: "A clear starting point for every analysis session.",
     iconName: "Map",
-    summary: "Understand the complete educational framework before applying any concepts. This module walks you through how the Swell Point Indicator is structured and how each component is designed to support a disciplined, process-driven approach to market analysis.",
+    summary: "Before applying any concept, understand the full picture. This section walks you through how to read market structure from the top down — identifying key levels, directional context, and where meaningful activity is likely to occur.",
     bullets: [
-      "Identify key structural points using a repeatable, step-by-step process",
-      "Learn Break of Structure (BOS) vs Change of Character (CHOCH) concepts",
-      "Understand how liquidity areas and fair value gaps fit into the framework",
-      "Establish a consistent daily analysis routine before executing any trade"
+      "Read market structure clearly using a consistent, top-down process",
+      "Identify Break of Structure (BOS) and Change of Character (CHOCH) patterns",
+      "Locate liquidity areas and fair value gaps with a repeatable method",
+      "Build a daily analysis routine that supports confident decision-making"
     ],
-    keyTakeaway: "A clear framework removes guesswork and builds consistency.",
+    keyTakeaway: "A clear starting point leads to more consistent decisions.",
     readTime: "12 min read",
     chapterExcerpt: {
-      heading: "Chapter 1: The Blueprint to Market Direction",
-      content: "Market structure is the foundation of price action analysis. Price moves in predictable cycles of expansion, retracement, consolidation, and reversal. When you learn to identify these patterns within a structured framework, chart analysis becomes far more consistent.",
+      heading: "Chapter 1: Reading Market Direction",
+      content: "Understanding market structure gives you context. When you know whether price is building, extending, or reversing, every decision becomes clearer. This section teaches you how to establish that context before anything else.",
       checklist: [
         "Step 1: Identify 4H Swing Points (Highs & Lows)",
         "Step 2: Mark Unfilled Fair Value Gaps (FVGs)",
@@ -46,20 +39,20 @@ export const MODULES_DATA: ModuleItem[] = [
     id: "module-2",
     number: "02",
     title: "THE KIT",
-    subtitle: "Access the tools and supporting resources included with the indicator.",
+    subtitle: "Every tool included, explained clearly.",
     iconName: "BarChart3",
-    summary: "Access every tool and supporting resource included with the Swell Point Indicator. This module covers how each element works within the educational framework and how to apply them as part of a structured analysis process.",
+    summary: "Access the full set of tools and resources included with the Swell Point Indicator. Each element is explained in context — what it does, why it matters, and how it fits into a structured analysis process.",
     bullets: [
-      "Understand volume profile clusters and point of control within the framework",
-      "Learn how order flow and depth concepts are applied in structured analysis",
-      "Set up moving average overlays for consistent trend filter validation",
-      "Decode multi-timeframe candlestick patterns within the learning process"
+      "Understand volume profile and point of control in practical terms",
+      "Learn how order flow concepts support structural decision-making",
+      "Apply moving average overlays as reliable trend confirmation filters",
+      "Read multi-timeframe patterns within a consistent analytical framework"
     ],
-    keyTakeaway: "The right tools, used consistently, build a repeatable process.",
+    keyTakeaway: "The right tools, applied consistently, build a process you can trust.",
     readTime: "15 min read",
     chapterExcerpt: {
-      heading: "Chapter 2: The Core Technical Toolkit",
-      content: "The Swell Point educational toolkit focuses on price action and volume-based analysis. By working through volume clusters, order flow concepts, and liquidity sweep zones, traders develop a more structured understanding of how markets move.",
+      heading: "Chapter 2: Tools That Support Structured Analysis",
+      content: "The Swell Point toolkit removes complexity and focuses on what matters. Volume, structure, and confirmation — each tool is included because it serves a specific purpose within the framework, not as noise.",
       checklist: [
         "Step 1: Map Point of Control (POC) on 1D Volume Profile",
         "Step 2: Highlight Buy-Side & Sell-Side Liquidity Sweeps",
@@ -72,25 +65,25 @@ export const MODULES_DATA: ModuleItem[] = [
     id: "module-3",
     number: "03",
     title: "THE MINDSET",
-    subtitle: "Develop structured habits for consistent decision-making.",
+    subtitle: "Build the habits that support consistent execution.",
     iconName: "Key",
-    summary: "Build Confidence Through Structure. The Swell Point Indicator simplifies complex market concepts into a structured educational process that supports consistency, clarity, and disciplined execution — helping traders develop better habits over time.",
+    summary: "The Swell Point Indicator is built on the idea that structure begins in the mind. This section focuses on developing the habits, routines, and decision-making processes that allow traders to apply the framework with discipline and clarity.",
     bullets: [
-      "Reduce trade anxiety by pre-defining your process before entering a position",
-      "Build a mechanical execution routine that supports emotional discipline",
-      "Develop a structured trading journal to track pattern recognition over time",
-      "Apply a process-driven approach used by consistent, disciplined traders"
+      "Pre-define your process before every session to reduce reactive decisions",
+      "Build a structured execution routine that removes emotional guesswork",
+      "Track your analysis using a structured journal built into the framework",
+      "Apply a process-first mindset supported by consistent review habits"
     ],
-    keyTakeaway: "Structured habits lead to consistent, disciplined execution.",
+    keyTakeaway: "Consistent habits create consistent outcomes over time.",
     readTime: "10 min read",
     chapterExcerpt: {
-      heading: "Chapter 3: The Psychology of Consistency",
-      content: "Most execution errors stem from emotional deviations from a defined plan. When you treat every trade as one outcome in a long series of structured decisions, the process becomes more consistent and easier to evaluate objectively.",
+      heading: "Chapter 3: Building a Process-Driven Approach",
+      content: "Most execution errors come from a lack of process, not a lack of knowledge. This section provides a repeatable structure for how you approach each session — from preparation to review — so every decision is grounded in your framework.",
       checklist: [
-        "Rule 1: Define your position size before entering any trade",
-        "Rule 2: Step away and review after two consecutive missed setups",
-        "Rule 3: Log every setup with a screenshot and process review",
-        "Rule 4: Accept the defined outcome BEFORE placing the entry"
+        "Rule 1: Define your process parameters before each session",
+        "Rule 2: Step back and review after two consecutive missed setups",
+        "Rule 3: Log every setup with a screenshot and structured notes",
+        "Rule 4: Commit to the defined plan before executing any position"
       ]
     }
   },
@@ -98,25 +91,25 @@ export const MODULES_DATA: ModuleItem[] = [
     id: "module-4",
     number: "04",
     title: "THE EXECUTION",
-    subtitle: "Learn how every component works together within the framework.",
+    subtitle: "Apply the full framework from start to finish.",
     iconName: "ShieldAlert",
-    summary: "Learn how every component of the Swell Point Indicator works together as a complete educational framework. This module covers position sizing, structured entry and exit planning, and how to apply the full system as a consistent process.",
+    summary: "This section brings everything together. Learn how to apply the Swell Point framework as a complete, end-to-end process — from identifying a setup to planning the entry, managing the position, and reviewing the outcome.",
     bullets: [
-      "Apply structured Risk-to-Reward planning as part of every setup review",
-      "Calculate position sizes based on entry distance and defined exposure levels",
-      "Use trailing stop concepts to manage open positions within the framework",
-      "Understand leverage concepts and how they fit within a structured approach"
+      "Plan structured entries and exits as part of a defined process",
+      "Size positions based on a consistent, rules-based exposure approach",
+      "Manage open positions using trailing concepts built into the framework",
+      "Review and refine your execution using the structured feedback loop"
     ],
-    keyTakeaway: "Execution discipline is what separates learning from applying.",
+    keyTakeaway: "Execution is where learning becomes application.",
     readTime: "14 min read",
     chapterExcerpt: {
-      heading: "Chapter 4: Structured Execution & Position Planning",
-      content: "Consistent execution is about applying a defined process every time. The Swell Point framework teaches traders how to plan entries, manage exposure, and evaluate outcomes — building a repeatable execution habit over time.",
+      heading: "Chapter 4: End-to-End Execution Framework",
+      content: "The Swell Point framework is designed to be applied start to finish. This chapter walks you through a complete trade cycle — from setup identification to outcome review — so you always know where you are in the process.",
       checklist: [
         "Calculate Position Size = (Account Size * Risk %) / (Entry - Stop Level)",
         "Set Exit Target 1 at 1:2 R:R (Reduce exposure & move Stop to Breakeven)",
         "Set Exit Target 2 at 1:3.5 R:R (Full structured target)",
-        "Never adjust Stop Level further away once trade is active"
+        "Review outcome against your pre-defined plan after every session"
       ]
     }
   }
@@ -126,10 +119,10 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
   {
     id: "test-1",
     name: "Sarah K.",
-    title: "New Trader • Seeking Structure",
-    quote: "I spent 6 months watching videos and getting contradictory advice. The Swell Point Indicator gave me a clear, 4-step framework. My first week applying structured analysis, I finally had a consistent process to follow.",
-    winRate: "Consistency: Improved Significantly",
-    timeSaved: "Saved 60+ Hours of Research",
+    title: "Trader • Seeking Structure",
+    quote: "I spent months watching videos and getting contradictory advice. The Swell Point Indicator gave me a clear framework I could actually follow. For the first time, my analysis felt structured and repeatable.",
+    winRate: "Clarity: Significantly Improved",
+    timeSaved: "Saved Hours of Research",
     verified: true,
     avatarSeed: "sarah",
     tradingStyle: "Swing Trader"
@@ -138,23 +131,23 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     id: "test-2",
     name: "Marcus T.",
     title: "Swing Trader • 2 Years Experience",
-    quote: "The section on liquidity sweeps and fair value gaps completely changed how I analyze charts. I finally understood the structural concepts behind price movement. This educational framework is the missing piece.",
+    quote: "The section on liquidity and fair value gaps changed how I read charts entirely. I finally had the structural vocabulary to understand what price was doing. The framework filled in every gap.",
     winRate: "Structure Clarity: Highly Improved",
-    timeSaved: "Process-Driven Execution",
+    timeSaved: "Consistent Process Applied",
     verified: true,
     avatarSeed: "marcus",
-    tradingStyle: "Market Structure Specialist"
+    tradingStyle: "Market Structure Trader"
   },
   {
     id: "test-3",
     name: "David L.",
-    title: "Part-time Trader • Tech Engineer",
-    quote: "No fluff, no empty promises — just clean, logical market structure concepts. The structured position sizing framework alone changed how I approach every setup. Essential for anyone serious about disciplined trading.",
+    title: "Trader • Tech Background",
+    quote: "Clean, logical, and straightforward. No hype — just a well-structured educational framework that teaches you how to think about market conditions. Exactly what I was looking for.",
     winRate: "Process Adherence: Consistent",
-    timeSaved: "Structured Execution Every Time",
+    timeSaved: "Structured Every Session",
     verified: true,
     avatarSeed: "david",
-    tradingStyle: "Macro Structure Analysis"
+    tradingStyle: "Structural Analysis"
   }
 ];
 
@@ -193,15 +186,11 @@ export const CRYPTO_TICKERS: CryptoTicker[] = [
 
 export const FAQS_DATA = [
   {
-    q: "WHAT'S INCLUDED WITH THE SWELL POINT INDICATOR?",
-    a: "The Swell Point Indicator includes educational materials, structured guidance, and supporting resources designed to help traders better understand market structure and execution. You receive instant access upon purchase."
+    q: "WHAT IS SWELL POINT?",
+    a: "The Swell Point Indicator is a structured educational tool designed to help traders develop a consistent, process-driven approach to market analysis. It includes a step-by-step framework, supporting resources, and guidance materials — all organized to support clearer thinking and more structured decision-making."
   },
   {
     q: "DO I NEED ANY EXPERIENCE?",
-    a: "No. The content is organized for both newer and experienced traders who want a structured learning process. Everything is explained clearly from the ground up."
-  },
-  {
-    q: "CAN THE SWELL POINT INDICATOR ENSURE SPECIFIC OUTCOMES?",
-    a: "No. The Swell Point Indicator is an educational resource designed to support learning and strategy development. Individual experiences will vary. No outcomes or results are promised or implied."
+    a: "No prior experience is required. The content is organized progressively — starting from foundational concepts and building toward full framework application. Everything is explained in plain language so you can follow along at your own pace."
   }
 ];

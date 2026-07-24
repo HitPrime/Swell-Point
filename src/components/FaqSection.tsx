@@ -40,7 +40,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto">
-            Everything you need to know about the Cassius Cuvee Swell Point before getting started.
+            Common questions about the Swell Point Indicator answered clearly.
           </p>
         </motion.div>
 
@@ -111,10 +111,10 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
           transition={{ duration: 0.3, delay: 0.1 }}
         >
           <h3 className="text-xl font-black text-white uppercase tracking-tight">
-            Continue with the Swell Point Indicator
+            Ready to Get Started?
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-            Complete your order to access the Swell Point educational framework.
+            The Swell Point Indicator is ready. Complete your purchase for instant access to the full educational framework.
           </p>
           <div>
             <button

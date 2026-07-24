@@ -95,10 +95,10 @@ export const InteractiveChartHUD: React.FC<InteractiveChartHUDProps> = ({
         {/* Subtle Chart Gridlines */}
         <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
-        {/* Institutional Supply Zone (Dashed Top Line) */}
+        {/* Supply Zone (Dashed Top Line) */}
         <div className="absolute top-6 left-0 right-0 border-b border-dashed border-rose-500/60 flex items-center justify-between px-3">
           <span className="text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 px-2 py-0.5 rounded border border-rose-800/40">
-            INSTITUTIONAL SUPPLY ZONE (${(currentAsset.price * 1.02).toFixed(0)})
+            SUPPLY ZONE
           </span>
           <span className="text-[9px] font-mono text-rose-400/80">REJECTION LEVEL</span>
         </div>
@@ -106,7 +106,7 @@ export const InteractiveChartHUD: React.FC<InteractiveChartHUDProps> = ({
         {/* Demand & Liquidity Sweep Zone (Dashed Bottom Line) */}
         <div className="absolute bottom-12 left-0 right-0 border-b border-dashed border-emerald-500/60 flex items-center justify-between px-3">
           <span className="text-[10px] font-mono text-emerald-400 font-bold bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/40">
-            LIQUIDITY SWEEP & DEMAND ZONE (${(currentAsset.price * 0.98).toFixed(0)})
+            LIQUIDITY SWEEP & DEMAND ZONE
           </span>
           <span className="text-[9px] font-mono text-emerald-400/80">STRUCTURE ENTRY</span>
         </div>
@@ -203,7 +203,7 @@ export const InteractiveChartHUD: React.FC<InteractiveChartHUDProps> = ({
 
         <div className="flex items-center gap-2 text-slate-400 text-[11px]">
           <ShieldCheck className="w-3.5 h-3.5 text-purple-400" />
-          <span>1:3 Risk-to-Reward Ratio Preset</span>
+          <span>Structured Execution Framework</span>
         </div>
       </div>
     </div>
