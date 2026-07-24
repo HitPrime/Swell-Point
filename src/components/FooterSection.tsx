@@ -11,12 +11,12 @@ export const FooterSection: React.FC = () => {
 
         {/* Risk Warning */}
         <p className="text-[11px] leading-relaxed max-w-2xl text-center text-slate-400 font-mono">
-          <strong>Risk Warning:</strong> Trading crypto assets, equities, and derivatives involves substantial risk of loss and is not suitable for every investor. Content in the Starter Kit is for educational purposes only and does not constitute financial or investment advice.
+          <strong>Risk Warning:</strong> Trading crypto assets, equities, and derivatives involves substantial risk of loss and is not suitable for every investor. Content in the Swell Point is for educational purposes only and does not constitute financial or investment advice.
         </p>
 
         {/* Copyright */}
         <div className="text-[11px] text-slate-500 font-mono">
-          © 2024 Trade Structure Pro. All rights reserved.
+          © 2026 Cassius Cuvee. All rights reserved.
         </div>
 
       </div>

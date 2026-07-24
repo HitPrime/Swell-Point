@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { X, BookOpen, Download, CheckCircle2, Sparkles, ArrowRight, Lock, ShieldCheck, FileText } from 'lucide-react';
+import { X, Download, CheckCircle2, Sparkles, Lock, ShieldCheck } from 'lucide-react';
 import { MODULES_DATA } from '../data/content';
 import { ModuleItem } from '../types';
-
-import starterKitCoverImage from '../assets/images/starter_kit_cover_1784829964252.jpg';
 
 interface StarterKitModalProps {
   isOpen: boolean;
@@ -34,7 +32,7 @@ export const StarterKitModal: React.FC<StarterKitModalProps> = ({
 
   const handleDownloadPDF = () => {
     const textContent = `
-TRADE STRUCTURE PRO - STARTER KIT
+CASSIUS CUVEE - SWELL POINT
 ===========================================
 Downloaded for: ${fullName || 'Valued Trader'} (${email || 'Direct Download'})
 Date: ${new Date().toLocaleDateString()}
@@ -63,14 +61,14 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
 - Position Size = (Account Balance * Risk %) / (Entry - Stop Loss).
 - Take 50% profit at 1:2 R:R and move Stop Loss to Breakeven.
 
-© 2024 Trade Structure Pro. All rights reserved.
+© 2026 Cassius Cuvee. All rights reserved.
     `.trim();
 
     const blob = new Blob([textContent], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Trade_Structure_Pro_Starter_Kit.txt';
+    link.download = 'Cassius_Cuvee_Swell_Point.txt';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -90,40 +88,17 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
         </button>
 
         {step === 'form' ? (
-          <div className="p-6 sm:p-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div className="p-6 sm:p-10">
             
-            {/* Book Cover Image Column */}
-            <div className="md:col-span-5 flex flex-col items-center">
-              <div className="relative w-full max-w-[220px] aspect-[3/4] rounded-2xl overflow-hidden border-2 border-purple-500/50 shadow-2xl shadow-purple-900/60 group">
-                <img
-                  src={starterKitCoverImage}
-                  alt="Trade Structure Pro Starter Kit Book Cover"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
-                  <div className="text-[10px] font-mono font-bold text-amber-300 flex items-center gap-1">
-                    <Sparkles className="w-3 h-3" />
-                    <span>600+ COPIES CLAIMED</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-4 text-center">
-                <div className="text-xs font-mono font-extrabold text-white uppercase">Instant PDF & Reader Access</div>
-                <div className="text-[10px] text-purple-300/80 mt-0.5">Secure Checkout</div>
-              </div>
-            </div>
-
-            {/* Lead Capture Form Column */}
-            <div className="md:col-span-7 space-y-5">
+            {/* Lead Capture Form */}
+            <div className="space-y-5">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950 border border-purple-500/40 text-purple-300 text-xs font-mono mb-2">
                   <Lock className="w-3 h-3 text-emerald-400" />
-                  <span>STARTER KIT — INSTANT ACCESS</span>
+                  <span>SWELL POINT — INSTANT ACCESS</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
-                  GET YOUR STARTER KIT NOW
+                  GET YOUR SWELL POINT NOW
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 mt-1">
                   Enter your details below to unlock the 4-part PDF blueprint and interactive chapter reader instantly.
@@ -172,7 +147,7 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
                   type="submit"
                   className="w-full neon-glow-btn text-white text-sm font-extrabold uppercase py-3.5 rounded-xl flex items-center justify-center gap-2 border border-purple-400/40 cursor-pointer shadow-lg mt-2"
                 >
-                  <span>PURCHASE NOW</span>
+                  <span>GET YOUR SWELL POINT</span>
                 </button>
 
                 <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400 font-mono pt-1">
@@ -190,10 +165,10 @@ CHAPTER 4: THE EXECUTION - RISK & POSITION SIZING
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-500/40 text-emerald-300 text-xs font-mono mb-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>STARTER KIT UNLOCKED FOR {fullName.toUpperCase() || 'TRADER'}</span>
+                  <span>SWELL POINT UNLOCKED FOR {fullName.toUpperCase() || 'TRADER'}</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-white uppercase">
-                  INTERACTIVE STARTER KIT READER
+                  INTERACTIVE SWELL POINT READER
                 </h3>
               </div>
 

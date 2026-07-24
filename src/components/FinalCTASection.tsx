@@ -22,7 +22,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
 
         {/* Body Text */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          Get the Starter Kit that walks you through trading from step one, in plain English. Stop watching random videos—start executing with structure today.
+          Get the Swell Point that walks you through trading from step one, in plain English. Stop watching random videos—start executing with structure today.
         </p>
 
         {/* CTA Button */}
@@ -32,7 +32,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
             id="final-cta-btn"
             className="w-full sm:w-auto neon-glow-btn text-white text-base sm:text-lg font-black tracking-wider uppercase px-10 py-5 rounded-2xl flex items-center justify-center gap-3 border border-purple-300/50 shadow-2xl shadow-purple-900/80 cursor-pointer group hover:scale-[1.02] transition-all"
           >
-            <span>PURCHASE NOW</span>
+            <span>GET YOUR SWELL POINT</span>
             <ArrowRight className="w-6 h-6 text-purple-200 group-hover:translate-x-2 transition-transform" />
           </button>
 

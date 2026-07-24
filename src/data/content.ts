@@ -1,11 +1,11 @@
 import { ModuleItem, TestimonialItem, CryptoTicker } from '../types';
 
 export const HERO_CONTENT = {
-  badge: "STARTER KIT - 600+ TRADERS STARTED HERE",
+  badge: "SWELL POINT - 600+ TRADERS STARTED HERE",
   headline: "TRADE WITH STRUCTURE. FINALLY UNDERSTAND IT.",
-  body: "Get the Starter Kit that walks you through trading from step one, in plain English. If you've watched fifty videos and still feel lost, that's not on you. Nobody is born knowing this stuff.",
-  ctaText: "PURCHASE NOW",
-  disclaimer: "TRADING STARTER KIT - INSTANT ACCESS",
+  body: "Get the Swell Point that walks you through trading from step one, in plain English. If you've watched fifty videos and still feel lost, that's not on you. Nobody is born knowing this stuff.",
+  ctaText: "GET YOUR SWELL POINT",
+  disclaimer: "TRADING SWELL POINT - INSTANT ACCESS",
   asSeenOnHeader: "AS SEEN ON WSJ / CNBC / SQUAWK ON THE STREET",
   mediaLogos: [
     { name: "WALL STREET JOURNAL", code: "WSJ", quote: "Simplifying market structure for retail traders" },
@@ -127,7 +127,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     id: "test-1",
     name: "Sarah K.",
     title: "New Trader • Formerly Overwhelmed",
-    quote: "I spent 6 months watching YouTube videos getting contradictory advice. The Starter Kit gave me a clear, 4-step checklist. My very first week trading with structure, I stopped panic-selling at the bottom.",
+    quote: "I spent 6 months watching YouTube videos getting contradictory advice. The Swell Point gave me a clear, 4-step checklist. My very first week trading with structure, I stopped panic-selling at the bottom.",
     winRate: "Win Rate: 38% → 64%",
     timeSaved: "Saved 60+ Hours",
     verified: true,
@@ -193,19 +193,15 @@ export const CRYPTO_TICKERS: CryptoTicker[] = [
 
 export const FAQS_DATA = [
   {
-    q: "What is included in the Trading Starter Kit?",
-    a: "The Starter Kit includes 4 complete modules covering market structure, essential tools, trading psychology, and risk management. You also get interactive chapter access and a downloadable PDF guide."
+    q: "WHAT'S ACTUALLY IN THE TRADING SWELL POINT?",
+    a: "Three pieces: the Trader's Blueprint PDF, the Trading Commandments poster and Glossary, and the First Trade Walkthrough video. Instant access upon purchase."
   },
   {
-    q: "Do I need prior trading experience to understand this?",
-    a: "Not at all. The Starter Kit is written specifically in plain, step-by-step English for beginners and intermediate traders who feel lost in technical jargon."
+    q: "DO I NEED ANY EXPERIENCE?",
+    a: "None at all. The Blueprint starts from the very beginning — what a market is, what bid and ask means, how to read a chart."
   },
   {
-    q: "What markets does this structure apply to?",
-    a: "Market structure is universal across all liquid asset classes. While our examples feature Bitcoin and Ethereum, the principles apply identically to Crypto, Forex, Stocks, and Futures."
-  },
-  {
-    q: "How long will it take to read and apply?",
-    a: "The entire guide can be read in under 45 minutes. You can start applying the 4-step checklist to live charts immediately."
+    q: "IS THIS FINANCIAL ADVICE?",
+    a: "No. Everything in the kit is educational content about process, mindset, and strategy — not a recommendation to buy or sell anything."
   }
 ];

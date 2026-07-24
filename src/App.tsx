@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { CurriculumSection } from './components/CurriculumSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
+import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { FooterSection } from './components/FooterSection';
+import { StarterKitModal } from './components/StarterKitModal';
+import { ModuleItem } from './types';
 
-const PURCHASE_URL = 'https://learn.cassiuscuvee.com/swell-point';
+const PURCHASE_URL = 'https://buyswellpoint.com/swell-point';
 
 export default function App() {
-  const [activeTicker, setActiveTicker] = useState('BTC/USD');
+  const [selectedModule, setSelectedModule] = useState<ModuleItem | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePurchase = () => {
     window.open(PURCHASE_URL, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleSelectModule = (module: ModuleItem) => {
+    setSelectedModule(module);
+    setIsModalOpen(true);
   };
 
   return (
@@ -19,23 +29,32 @@ export default function App() {
       <Navbar
         onOpenLeadModal={handlePurchase}
         onOpenCalculator={handlePurchase}
-        activeTicker={activeTicker}
-        setActiveTicker={setActiveTicker}
       />
 
       <main className="flex-grow">
         <HeroSection
           onOpenLeadModal={handlePurchase}
-          activeTicker={activeTicker}
-          setActiveTicker={setActiveTicker}
+        />
+
+        <CurriculumSection
+          onSelectModule={handleSelectModule}
+          onOpenLeadModal={handlePurchase}
         />
 
         <TestimonialsSection onOpenLeadModal={handlePurchase} />
 
         <FinalCTASection onOpenLeadModal={handlePurchase} />
+
+        <FaqSection onOpenLeadModal={handlePurchase} />
       </main>
 
       <FooterSection />
+
+      <StarterKitModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialModule={selectedModule}
+      />
     </div>
   );
 }
