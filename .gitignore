@@ -4,3 +4,6 @@ dist/
 coverage/
 .DS_Store
 *.log
+src/assets/welcome-video.mov
+src/assets/*.mov
+src/assets/*.mp4

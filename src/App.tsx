@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { VideoSection } from './components/VideoSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { FooterSection } from './components/FooterSection';
 import { StarterKitModal } from './components/StarterKitModal';
-
-const PURCHASE_URL = 'https://buyswellpoint.com/swell-point';
+import { SurveyModal } from './components/SurveyModal';
 
 export default function App() {
+  const [isSurveyOpen, setIsSurveyOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePurchase = () => {
-    window.open(PURCHASE_URL, '_blank', 'noopener,noreferrer');
+    setIsSurveyOpen(true);
   };
 
   return (
@@ -28,6 +29,8 @@ export default function App() {
           onOpenLeadModal={handlePurchase}
         />
 
+        <VideoSection />
+
         <TestimonialsSection onOpenLeadModal={handlePurchase} />
 
         <FinalCTASection onOpenLeadModal={handlePurchase} />
@@ -41,6 +44,11 @@ export default function App() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         initialModule={null}
+      />
+
+      <SurveyModal
+        isOpen={isSurveyOpen}
+        onClose={() => setIsSurveyOpen(false)}
       />
     </div>
   );

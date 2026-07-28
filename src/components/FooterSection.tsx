@@ -11,7 +11,7 @@ export const FooterSection: React.FC = () => {
 
         {/* Disclaimer */}
         <p className="text-[11px] leading-relaxed max-w-2xl text-center text-slate-400 font-mono">
-          <strong>Disclaimer:</strong> The Swell Point Indicator is provided for educational purposes only. No outcomes or results are promised or implied. Users are responsible for their own decisions when applying the concepts presented.
+          <strong>Disclaimer:</strong> The Swell Point Indicator is an educational resource provided for informational and learning purposes only. It does not constitute advice of any kind. No specific outcomes, results, or performance levels are promised or implied. All decisions made using this material are the sole responsibility of the individual user.
         </p>
 
         {/* Copyright */}

@@ -1,6 +1,6 @@
 {
-  "name": "Trade Structure Pro",
-  "description": "High-converting neon corporate noir landing page and trading starter kit for crypto & market structure masterclass.",
+  "name": "Swell Point Indicator",
+  "description": "Structured trading education tool by Cassius Cuvee. Instant access upon purchase.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }
