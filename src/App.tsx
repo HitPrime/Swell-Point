@@ -29,7 +29,7 @@ export default function App() {
           onOpenLeadModal={handlePurchase}
         />
 
-        <VideoSection />
+        {/* <VideoSection /> */}
 
         <TestimonialsSection onOpenLeadModal={handlePurchase} />
 
