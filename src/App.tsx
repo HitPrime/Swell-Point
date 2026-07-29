@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
-import { VideoSection } from './components/VideoSection';
+import { ChartSection } from './components/ChartSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
@@ -29,9 +29,9 @@ export default function App() {
           onOpenLeadModal={handlePurchase}
         />
 
-        {/* <VideoSection /> */}
+        <ChartSection />
 
-        <TestimonialsSection onOpenLeadModal={handlePurchase} />
+        {/* <TestimonialsSection onOpenLeadModal={handlePurchase} /> */}
 
         <FinalCTASection onOpenLeadModal={handlePurchase} />
 
