@@ -14,7 +14,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onOpenLeadModal,
 }) => {
   return (
-    <section id="hero" className="relative pt-0 pb-8 lg:pb-12 overflow-hidden bg-noir-gradient">
+    <section id="hero" className="relative pt-0 pb-8 lg:pb-12 bg-noir-gradient">
       <div className="absolute inset-0 bg-grid-pattern opacity-25 pointer-events-none" />
       <div className="absolute inset-0 bg-circuit-pattern opacity-15 pointer-events-none" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[900px] h-[500px] bg-purple-900/20 rounded-full blur-[140px] pointer-events-none" />

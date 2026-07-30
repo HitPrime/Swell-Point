@@ -15,7 +15,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
   };
 
   return (
-    <section id="faq" className="relative py-20 bg-[#08030f] border-t border-b border-purple-900/40 overflow-hidden">
+    <section id="faq" className="relative py-20 bg-[#08030f] border-t border-b border-purple-900/40">
       {/* Background wireframe grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none" />
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-80 h-80 bg-purple-900/15 rounded-full blur-[100px] pointer-events-none" />

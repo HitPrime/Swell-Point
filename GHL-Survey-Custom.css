@@ -1,0 +1,547 @@
+/* ============================================================
+   SWELL POINT — GHL Survey Custom CSS
+   Theme: Dark Noir + Purple Neon | BG: #1B0E30
+   Paste this inside:
+   GHL → Surveys → [Your Survey] → Styles → Custom CSS
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. GLOBAL BACKGROUND
+   ---------------------------------------------------------- */
+body,
+.hl-app,
+#root,
+#_builder-form,
+.ghl-form,
+.hl-app .ghl-slide,
+.hl-app .ghl-form-slide,
+.hl-app .ghl-question-set {
+  background-color: #1B0E30 !important;
+  background: #1B0E30 !important;
+  color: #f3f0ff !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* ----------------------------------------------------------
+   2. QUESTION LABELS
+   ---------------------------------------------------------- */
+.hl-app .ghl-question-set label,
+.hl-app .ghl-question-set .ghl-field-desc,
+.hl-app .ghl-question-set .question-label,
+.hl-app .question-label {
+  color: #e9d5ff !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 10px !important;
+}
+
+/* ----------------------------------------------------------
+   3. INPUT FIELDS
+   ---------------------------------------------------------- */
+.hl-app input[type="text"],
+.hl-app input[type="email"],
+.hl-app input[type="tel"],
+.hl-app input[type="phone"],
+.hl-app input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+.hl-app .form-control,
+.hl-app input.form-control {
+  background-color: #120A24 !important;
+  background: #120A24 !important;
+  color: #f3f0ff !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.55) !important;
+  border-bottom: 1.5px solid rgba(168, 85, 247, 0.55) !important;
+  border-radius: 10px !important;
+  padding: 14px 16px !important;
+  font-size: 14px !important;
+  width: 100% !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.hl-app input[type="text"]:focus,
+.hl-app input[type="email"]:focus,
+.hl-app input[type="tel"]:focus,
+.hl-app input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2) !important;
+  background-color: #1a0d38 !important;
+}
+
+input::placeholder,
+.hl-app input::placeholder {
+  color: rgba(167, 139, 250, 0.4) !important;
+}
+
+/* ----------------------------------------------------------
+   4. TEXTAREA
+   ---------------------------------------------------------- */
+textarea,
+.hl-app textarea,
+.hl-app textarea.form-control {
+  background-color: #120A24 !important;
+  color: #f3f0ff !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.55) !important;
+  border-radius: 10px !important;
+  padding: 14px 16px !important;
+  font-size: 14px !important;
+  width: 100% !important;
+  outline: none !important;
+  resize: vertical !important;
+  min-height: 110px !important;
+}
+
+/* ----------------------------------------------------------
+   5. DROPDOWN / SELECT
+   ---------------------------------------------------------- */
+.hl-app .v-select,
+.hl-app .vs__dropdown-toggle {
+  background-color: #120A24 !important;
+  background: #120A24 !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.55) !important;
+  border-radius: 10px !important;
+  min-height: 50px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Kill red validation border */
+.hl-app .v-select .vs__dropdown-toggle,
+.hl-app .v-select.is-invalid .vs__dropdown-toggle,
+.hl-app .has-error .vs__dropdown-toggle,
+.hl-app [class*="error"] .vs__dropdown-toggle,
+.hl-app [class*="invalid"] .vs__dropdown-toggle {
+  border-color: rgba(168, 85, 247, 0.55) !important;
+  box-shadow: none !important;
+}
+
+.hl-app .vs__search,
+.hl-app .vs__search:focus {
+  background: transparent !important;
+  color: #f3f0ff !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.hl-app .vs__search::placeholder {
+  color: rgba(167, 139, 250, 0.4) !important;
+}
+
+.hl-app .vs__dropdown-menu {
+  background-color: #1B0E30 !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.55) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 30px rgba(109, 40, 217, 0.3) !important;
+  padding: 6px !important;
+}
+
+.hl-app .vs__dropdown-option {
+  color: #e9d5ff !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  font-size: 14px !important;
+  background: transparent !important;
+}
+
+.hl-app .vs__dropdown-option--highlight {
+  background-color: rgba(168, 85, 247, 0.2) !important;
+  color: #f3f0ff !important;
+}
+
+.hl-app .vs__selected {
+  color: #f3f0ff !important;
+  background: rgba(168, 85, 247, 0.12) !important;
+  border: 1px solid rgba(168, 85, 247, 0.3) !important;
+  border-radius: 6px !important;
+}
+
+.hl-app .vs__open-indicator {
+  fill: rgba(168, 85, 247, 0.7) !important;
+}
+
+/* ----------------------------------------------------------
+   6. RADIO & CHECKBOX OPTIONS
+   ---------------------------------------------------------- */
+.hl-app .ghl-choice-option,
+.hl-app .ghl-question-set .ghl-choice-option {
+  background-color: #120A24 !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.35) !important;
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  color: #e9d5ff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  margin-bottom: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.hl-app .ghl-choice-option:hover {
+  border-color: rgba(168, 85, 247, 0.8) !important;
+  background-color: rgba(168, 85, 247, 0.1) !important;
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.15) !important;
+}
+
+.hl-app .ghl-choice-option.active,
+.hl-app .ghl-choice-option.selected {
+  background: rgba(139, 92, 246, 0.2) !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.25) !important;
+  color: #f3f0ff !important;
+}
+
+.hl-app input[type="radio"],
+.hl-app input[type="checkbox"] {
+  accent-color: #a855f7 !important;
+}
+
+/* ----------------------------------------------------------
+   7. FOOTER BAR — AGGRESSIVE OVERRIDE
+   ---------------------------------------------------------- */
+/* Main footer container */
+#_builder-form > div.ghl-footer,
+.hl-app .ghl-footer,
+.ghl-footer,
+div.ghl-footer,
+[class*="ghl-footer"] {
+  background: #1B0E30 !important;
+  background-color: #1B0E30 !important;
+  border-top: 1px solid rgba(168, 85, 247, 0.25) !important;
+  box-shadow: 0 -4px 20px rgba(109, 40, 217, 0.2) !important;
+  padding: 14px 20px !important;
+  height: auto !important;
+  min-height: 64px !important;
+}
+
+/* Kill ALL white backgrounds in footer */
+.ghl-footer,
+.ghl-footer *,
+.ghl-footer > *,
+.ghl-footer div,
+.ghl-footer span,
+.hl-app .ghl-footer,
+.hl-app .ghl-footer *,
+.hl-app .ghl-footer > *,
+.hl-app .ghl-footer div,
+.hl-app .ghl-footer span {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Progress bar container fix */
+.ghl-footer .ghl-progress-bar,
+.ghl-footer .ghl-button-bar,
+.hl-app .ghl-footer .ghl-progress-bar,
+.hl-app .ghl-footer .ghl-button-bar {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Re-apply button gradient after wildcard reset */
+.ghl-footer button,
+.ghl-footer .ghl-next-button,
+.ghl-footer #nextButton,
+.hl-app .ghl-footer button,
+.hl-app .ghl-footer .ghl-next-button,
+.hl-app .ghl-footer #nextButton {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%) !important;
+  background-color: #8b5cf6 !important;
+  border: 1px solid rgba(192, 132, 252, 0.5) !important;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.45) !important;
+}
+
+.ghl-footer .ghl-back-button,
+.hl-app .ghl-footer .ghl-back-button {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(168, 85, 247, 0.4) !important;
+}
+
+/* Hide ALL images, logos, branding in footer */
+.ghl-footer img,
+.ghl-footer svg:not([class*="lucide"]),
+.ghl-footer [class*="brand"],
+.ghl-footer [class*="logo"],
+.ghl-footer [class*="powered"],
+.ghl-footer a[href*="gohighlevel"],
+.hl-app .ghl-footer img,
+.hl-app .ghl-footer [class*="brand"],
+.hl-app .ghl-footer [class*="logo"],
+.hl-app .ghl-footer [class*="powered"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* ----------------------------------------------------------
+   8. NEXT / SUBMIT BUTTON
+   ---------------------------------------------------------- */
+.hl-app .ghl-button-bar .ghl-next-button,
+#nextButton,
+.hl-app button[type="submit"] {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(192, 132, 252, 0.5) !important;
+  border-radius: 12px !important;
+  padding: 12px 32px !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  cursor: pointer !important;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.45) !important;
+  min-width: 140px !important;
+  float: none !important;
+  height: auto !important;
+}
+
+.hl-app .ghl-button-bar .ghl-next-button:hover,
+#nextButton:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%) !important;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.7) !important;
+  transform: translateY(-2px) !important;
+}
+
+.hl-app .ghl-button-bar .ghl-next-button .right-pointing-triangle::after {
+  content: "CONTINUE →" !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.1em !important;
+}
+
+/* ----------------------------------------------------------
+   9. BACK BUTTON
+   ---------------------------------------------------------- */
+.hl-app .ghl-button-bar .ghl-back-button {
+  background: transparent !important;
+  color: #a78bfa !important;
+  border: 1px solid rgba(168, 85, 247, 0.4) !important;
+  border-radius: 12px !important;
+  padding: 12px 24px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  float: none !important;
+  height: auto !important;
+}
+
+.hl-app .ghl-button-bar .ghl-back-button .left-pointing-triangle::after {
+  content: "← BACK" !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+/* Button bar layout */
+.hl-app .ghl-button-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  direction: ltr !important;
+}
+
+/* ----------------------------------------------------------
+   10. PROGRESS BAR
+   ---------------------------------------------------------- */
+#_builder-form > div.ghl-footer > div.ghl-progress-bar,
+.hl-app .ghl-progress-bar {
+  width: 100% !important;
+  height: 4px !important;
+  background-color: rgba(168, 85, 247, 0.12) !important;
+  border-radius: 99px !important;
+  overflow: hidden !important;
+  margin-bottom: 12px !important;
+  display: flex !important;
+}
+
+.hl-app .ghl-progress-bar-text {
+  display: none !important;
+}
+
+#_builder-form > div.ghl-footer > div.ghl-progress-bar > div.ghl-progress-bar-background,
+.hl-app .ghl-progress-bar-background {
+  flex: 1 !important;
+  background-color: rgba(168, 85, 247, 0.12) !important;
+  border-radius: 99px !important;
+  height: 4px !important;
+  border: none !important;
+  border-left: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+#_builder-form > div.ghl-footer > div.ghl-progress-bar > div.ghl-progress-bar-background > div,
+.hl-app .ghl-progress-bar-background > div {
+  background: linear-gradient(90deg, #8b5cf6, #a855f7) !important;
+  height: 100% !important;
+  border-radius: 99px !important;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.6) !important;
+}
+
+/* ----------------------------------------------------------
+   11. ERROR MESSAGES
+   ---------------------------------------------------------- */
+.hl-app .error-msg,
+.hl-app .field-error,
+.hl-app .validation-error {
+  color: #f87171 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin-top: 6px !important;
+  padding: 6px 10px !important;
+  background: rgba(239, 68, 68, 0.08) !important;
+  border: 1px solid rgba(239, 68, 68, 0.25) !important;
+  border-radius: 8px !important;
+}
+
+/* ----------------------------------------------------------
+   12. SUBMISSION IN PROGRESS POPUP
+   ---------------------------------------------------------- */
+.hl-app .ghl-modal,
+.hl-app .ghl-dialog,
+.hl-app [class*="modal"],
+.hl-app [class*="dialog"],
+.hl-app [class*="popup"] {
+  background: #1B0E30 !important;
+  background-color: #1B0E30 !important;
+  border: 1px solid rgba(168, 85, 247, 0.4) !important;
+  border-radius: 16px !important;
+  color: #f3f0ff !important;
+  box-shadow: 0 0 40px rgba(109, 40, 217, 0.4) !important;
+  overflow: hidden !important;
+}
+
+/* Kill inner dark box background and border */
+.hl-app [class*="modal"] div,
+.hl-app [class*="modal"] > *,
+.hl-app [class*="modal"] p,
+.hl-app [class*="modal"] span,
+.hl-app [class*="dialog"] div,
+.hl-app [class*="dialog"] > *,
+.hl-app [class*="dialog"] p,
+.hl-app [class*="dialog"] span {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #f3f0ff !important;
+}
+
+/* Fix hourglass icon size — prevent overflow */
+.hl-app [class*="modal"] svg,
+.hl-app [class*="dialog"] svg {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  flex-shrink: 0 !important;
+  overflow: visible !important;
+}
+
+/* Popup backdrop */
+.hl-app [class*="overlay"],
+.hl-app [class*="backdrop"] {
+  background: rgba(8, 3, 15, 0.85) !important;
+}
+
+/* Continue button */
+.hl-app [class*="modal"] button,
+.hl-app [class*="dialog"] button {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%) !important;
+  background-color: #8b5cf6 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(192, 132, 252, 0.5) !important;
+  border-radius: 10px !important;
+  padding: 10px 24px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4) !important;
+}
+
+/* Start over button */
+.hl-app [class*="modal"] button:first-of-type,
+.hl-app [class*="dialog"] button:first-of-type {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(168, 85, 247, 0.5) !important;
+  color: #a78bfa !important;
+  box-shadow: none !important;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1B0E30; }
+::-webkit-scrollbar-thumb { background: #4c1d95; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #7c3aed; }
+
+/* ----------------------------------------------------------
+   13. MOBILE
+   ---------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+
+  /* Force footer visible */
+  #_builder-form > div.ghl-footer,
+  .hl-app .ghl-footer,
+  .ghl-footer,
+  div.ghl-footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    bottom: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 60px !important;
+    padding: 12px 14px !important;
+    background: #1B0E30 !important;
+    background-color: #1B0E30 !important;
+    z-index: 9999 !important;
+    overflow: visible !important;
+  }
+
+  /* Force button bar visible */
+  .hl-app .ghl-button-bar,
+  .ghl-footer .ghl-button-bar {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  /* Force Next button visible */
+  .hl-app .ghl-button-bar .ghl-next-button,
+  .ghl-footer .ghl-next-button,
+  #nextButton {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    padding: 12px 24px !important;
+    font-size: 12px !important;
+    min-width: 80px !important;
+    height: auto !important;
+    width: auto !important;
+    float: none !important;
+    pointer-events: auto !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: rgba(168, 85, 247, 0.3) !important;
+  }
+}
