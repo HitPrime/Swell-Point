@@ -16,12 +16,12 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
 
         {/* Headline */}
         <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans">
-          ACCESS THE <span className="text-purple-400">SWELL POINT INDICATOR</span>
+          ACCESS THE <span className="text-purple-400">SWELL POINT</span> INDICATOR
         </h2>
 
         {/* Body Text */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          The Swell Point Indicator is ready for instant access. Complete your purchase and begin working through the full educational framework today.
+          Swell Point is ready for instant access. Complete this short form to continue.
         </p>
 
         {/* Survey — embedded directly below the button, themed to match page */}
