@@ -1,6 +1,5 @@
 import React from 'react';
-import { ArrowRight, ChevronDown } from 'lucide-react';
-import { motion } from 'motion/react';
+import { ArrowRight } from 'lucide-react';
 
 import heroSilhouetteImage from '../assets/images/noir_trader_hero_1784829945407.jpg';
 
@@ -71,32 +70,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
         </div>
-      </div>
-
-      {/* Scroll Down Arrow */}
-      <div className="relative z-10 flex flex-col items-center justify-center pt-10 pb-2 gap-2">
-        {/* Glow ring behind arrow */}
-        <div className="relative flex items-center justify-center">
-          <div className="absolute w-16 h-16 rounded-full bg-purple-600/20 blur-xl" />
-          <div className="absolute w-10 h-10 rounded-full bg-purple-500/30 blur-md" />
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-            className="relative z-10 flex flex-col items-center gap-1"
-          >
-            <ChevronDown
-              className="w-8 h-8 text-purple-400 drop-shadow-[0_0_12px_rgba(168,85,247,0.9)]"
-              strokeWidth={2.5}
-            />
-            <ChevronDown
-              className="w-6 h-6 text-purple-500/60 drop-shadow-[0_0_8px_rgba(168,85,247,0.5)] -mt-4"
-              strokeWidth={2}
-            />
-          </motion.div>
-        </div>
-        <span className="text-[11px] font-mono text-purple-400/70 uppercase tracking-widest">
-          Watch How It Works
-        </span>
       </div>
 
     </section>
