@@ -490,30 +490,30 @@ div.ghl-footer,
    ---------------------------------------------------------- */
 @media only screen and (max-width: 640px) {
 
-  /* Force footer visible */
+  /* Force footer sticky at bottom inside iframe */
   #_builder-form > div.ghl-footer,
   .hl-app .ghl-footer,
   .ghl-footer,
   div.ghl-footer {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
     visibility: visible !important;
     opacity: 1 !important;
-    position: relative !important;
-    bottom: auto !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
+    position: sticky !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     width: 100% !important;
     height: auto !important;
     min-height: 60px !important;
-    padding: 12px 14px !important;
+    padding: 10px 14px !important;
     background: #1B0E30 !important;
     background-color: #1B0E30 !important;
     z-index: 9999 !important;
-    overflow: visible !important;
+    border-top: 1px solid rgba(168, 85, 247, 0.3) !important;
   }
 
-  /* Force button bar visible */
+  /* Button bar */
   .hl-app .ghl-button-bar,
   .ghl-footer .ghl-button-bar {
     display: flex !important;
@@ -523,25 +523,33 @@ div.ghl-footer,
     align-items: center !important;
     width: 100% !important;
     position: relative !important;
+    z-index: 9999 !important;
   }
 
-  /* Force Next button visible */
+  /* Next button */
   .hl-app .ghl-button-bar .ghl-next-button,
   .ghl-footer .ghl-next-button,
   #nextButton {
     display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     visibility: visible !important;
     opacity: 1 !important;
     position: relative !important;
     z-index: 9999 !important;
-    padding: 12px 24px !important;
-    font-size: 12px !important;
-    min-width: 80px !important;
+    padding: 12px 28px !important;
+    font-size: 13px !important;
+    min-width: 100px !important;
     height: auto !important;
     width: auto !important;
     float: none !important;
     pointer-events: auto !important;
     touch-action: manipulation !important;
-    -webkit-tap-highlight-color: rgba(168, 85, 247, 0.3) !important;
+    cursor: pointer !important;
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%) !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(192, 132, 252, 0.5) !important;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5) !important;
   }
 }
