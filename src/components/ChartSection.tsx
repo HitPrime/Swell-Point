@@ -1,5 +1,5 @@
 import React from 'react';
-import chartImage from '../assets/images/chart-screenshot.png';
+import chartImage from '../assets/images/chart screenshot2.png';
 
 export const ChartSection: React.FC = () => {
   return (
