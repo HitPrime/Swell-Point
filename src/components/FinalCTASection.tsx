@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 interface FinalCTASectionProps {
   onOpenLeadModal: () => void;
@@ -12,7 +13,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
       <div className="absolute inset-0 bg-circuit-pattern opacity-15 pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-purple-900/20 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
 
         {/* Headline */}
         <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans">
@@ -21,28 +22,18 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
 
         {/* Body Text */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          Swell Point is ready for instant access. Complete this short form to continue.
+          The Swell Point Indicator is ready for instant access. Complete your purchase and begin working through the full educational framework today.
         </p>
 
-        {/* Survey — embedded directly below the button, themed to match page */}
-        <div id="survey-section" className="survey-wrapper w-full mt-8 mx-0" style={{ background: '#1B0E30' }}>
-          {/* Corner glows — pointer-events none so they don't block touch */}
-          <div className="survey-corner-tl" style={{ pointerEvents: 'none' }} />
-          <div className="survey-corner-br" style={{ pointerEvents: 'none' }} />
-
-          {/* Header bar */}
-          <div className="survey-header">
-            <span className="survey-header-title">Get Swell Point Indicator</span>
-          </div>
-
-          {/* Survey iframe */}
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/survey/clj5Aho9QmskN6uqe3ht"
-            style={{ border: 'none', width: '100%', minHeight: '600px' }}
-            scrolling="yes"
-            id="clj5Aho9QmskN6uqe3ht"
-            title="survey"
-          />
+        {/* CTA Button */}
+        <div className="pt-4 flex justify-center">
+          <button
+            onClick={onOpenLeadModal}
+            className="neon-glow-btn text-white text-base sm:text-lg font-black tracking-wider uppercase px-10 py-5 rounded-2xl flex items-center justify-center gap-3 border border-purple-300/50 shadow-2xl shadow-purple-900/80 cursor-pointer group hover:scale-[1.02] transition-all"
+          >
+            <span>GET STARTED TODAY</span>
+            <ArrowRight className="w-6 h-6 text-purple-200 group-hover:translate-x-2 transition-transform" />
+          </button>
         </div>
 
       </div>

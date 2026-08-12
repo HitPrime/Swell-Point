@@ -11,10 +11,7 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePurchase = () => {
-    const surveySection = document.getElementById('survey-section');
-    if (surveySection) {
-      surveySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    window.open('https://go.getswellpoint.com/swell-point', '_blank', 'noopener,noreferrer');
   };
 
   return (
