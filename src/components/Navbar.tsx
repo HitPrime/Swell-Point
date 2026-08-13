@@ -26,10 +26,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={onOpenLeadModal}
             id="nav-cta-btn"
-            className="neon-glow-btn text-white text-[10px] sm:text-sm font-bold tracking-normal uppercase px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg flex items-center gap-1 sm:gap-2 border border-purple-400/40 whitespace-nowrap cursor-pointer"
+            className="neon-glow-btn text-white text-[9px] sm:text-sm font-bold tracking-normal uppercase px-2 sm:px-5 py-2 sm:py-2.5 rounded-lg flex items-center gap-1 sm:gap-2 border border-purple-400/40 whitespace-nowrap cursor-pointer max-w-[140px] sm:max-w-none"
           >
             <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 animate-pulse shrink-0" />
-            <span>GET SWELL POINT INDICATOR</span>
+            <span className="sm:hidden">GET ACCESS</span>
+            <span className="hidden sm:inline">GET SWELL POINT INDICATOR</span>
           </button>
         </div>
       </div>

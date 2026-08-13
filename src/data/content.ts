@@ -187,10 +187,10 @@ export const CRYPTO_TICKERS: CryptoTicker[] = [
 export const FAQS_DATA = [
   {
     q: "WHAT IS SWELL POINT?",
-    a: "The Swell Point Indicator is a structured educational tool designed to help traders develop a consistent, process-driven approach to market analysis. It includes a step-by-step framework, supporting resources, and guidance materials — all organized to support clearer thinking and more structured decision-making."
+    a: "Swell Point is a proprietary TradingView indicator built to bring structure to technical analysis, cutting through the guesswork, so your decisions come from a repeatable method, not emotion. Beginners and experienced traders alike use it to read charts with more clarity and confidence."
   },
   {
     q: "DO I NEED ANY EXPERIENCE?",
-    a: "No prior experience is required. The content is organized progressively — starting from foundational concepts and building toward full framework application. Everything is explained in plain language so you can follow along at your own pace."
+    a: "No, no prior experience is required. It's built to work for beginners and experienced traders alike."
   }
 ];

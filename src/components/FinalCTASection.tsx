@@ -16,13 +16,14 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenLeadModa
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
 
         {/* Headline */}
-        <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans">
-          ACCESS THE <span className="text-purple-400">SWELL POINT</span> INDICATOR
+        <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight font-sans leading-tight">
+          Ready to<br />
+          <span className="text-purple-400">Catch the Wave?</span>
         </h2>
 
         {/* Body Text */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-          The Swell Point Indicator is ready for instant access. Complete your purchase and begin working through the full educational framework today.
+          Swell Point is ready. Get access now!
         </p>
 
         {/* CTA Button */}

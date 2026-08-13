@@ -111,10 +111,10 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
           transition={{ duration: 0.3, delay: 0.1 }}
         >
           <h3 className="text-xl font-black text-white uppercase tracking-tight">
-            Ready to Get Started?
+            Ready to Catch the Wave?
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-lg mx-auto">
-            The Swell Point Indicator is ready. Complete your purchase for instant access to the full educational framework.
+            Swell Point is ready. Get access now!
           </p>
           <div>
             <button
