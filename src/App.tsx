@@ -11,7 +11,7 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handlePurchase = () => {
-    window.open('https://go.getswellpoint.com/swell-point', '_blank', 'noopener,noreferrer');
+    window.location.href = '/checkout';
   };
 
   return (
