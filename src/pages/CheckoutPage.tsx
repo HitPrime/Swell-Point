@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Zap, Waves } from 'lucide-react';
 import { loadWhop } from '@whop/elements';
 import { Checkout, CheckoutElement, WhopElements } from '@whop/elements-react';
@@ -25,12 +25,18 @@ const features = [
   },
 ];
 
-function EmbeddedCheckout() {
+interface EmbeddedCheckoutProps {
+  email: string;
+}
+
+function EmbeddedCheckout({ email }: EmbeddedCheckoutProps) {
+  const returnUrl = `https://go.getswellpoint.com/unlock-your-video?email=${encodeURIComponent(email)}`;
+
   return (
     <WhopElements elements={loadWhop()}>
       <Checkout
         plan="plan_eE9xzX0T1a7AA"
-        returnUrl="https://go.getswellpoint.com/unlock-your-video"
+        returnUrl={returnUrl}
       >
         <CheckoutElement />
       </Checkout>
@@ -39,6 +45,17 @@ function EmbeddedCheckout() {
 }
 
 export const CheckoutPage: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [step, setStep] = useState(1);
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStep(2);
+    setTimeout(() => {
+      document.getElementById('checkout-form')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <div className="min-h-screen bg-[#08030f] text-slate-100 flex flex-col font-sans selection:bg-purple-600 selection:text-white overflow-x-hidden">
 
@@ -86,18 +103,72 @@ export const CheckoutPage: React.FC = () => {
           </div>
         </section>
 
-        {/* ── WHOP CHECKOUT ── */}
+        {/* ── CHECKOUT ── */}
         <section id="checkout-form" className="py-14 bg-[#08030f] border-t border-purple-900/30">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6">
-            <div className="bg-white/95 rounded-2xl p-6 sm:p-8 space-y-4 border-2 border-purple-500 shadow-[0_0_30px_rgba(168,85,247,0.3)]">
-              <h2 className="text-lg font-black text-[#08030f] uppercase tracking-wide text-center">
-                Complete Your <span className="text-purple-600">Purchase</span>
-              </h2>
-              <EmbeddedCheckout />
-              <p className="text-center text-[11px] text-gray-500 font-mono">
-                All sales are final. Due to the nature of digital products and educational content, no refunds are issued once a purchase is complete.
-              </p>
+          <div className="max-w-2xl mx-auto px-4 sm:px-6 space-y-6">
+
+            {/* Step indicators */}
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex items-center gap-2">
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-black transition-all ${step >= 1 ? 'bg-purple-600 text-white shadow-[0_0_15px_rgba(139,92,246,0.6)]' : 'bg-purple-900/40 border border-purple-700 text-slate-400'}`}>1</div>
+                <span className={`text-xs font-bold uppercase tracking-wide ${step >= 1 ? 'text-white' : 'text-slate-500'}`}>Your Email</span>
+              </div>
+              <div className="w-10 h-px bg-purple-800" />
+              <div className="flex items-center gap-2">
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-black transition-all ${step >= 2 ? 'bg-purple-600 text-white shadow-[0_0_15px_rgba(139,92,246,0.6)]' : 'bg-purple-900/40 border border-purple-700 text-slate-400'}`}>2</div>
+                <span className={`text-xs font-bold uppercase tracking-wide ${step >= 2 ? 'text-white' : 'text-slate-500'}`}>Payment</span>
+              </div>
             </div>
+
+            {/* STEP 1 — Email capture */}
+            {step === 1 && (
+              <form onSubmit={handleEmailSubmit} className="glass-noir-card rounded-2xl p-8 space-y-5">
+                <h2 className="text-lg font-black text-white uppercase tracking-wide text-center">
+                  Step #1 — <span className="text-purple-400">Enter Your Email</span>
+                </h2>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold text-slate-300 uppercase tracking-wide">Email Address</label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="john@example.com"
+                    required
+                    className="bg-[#120A24] text-white border border-purple-500/40 rounded-xl px-4 py-3 text-sm outline-none focus:border-purple-500 focus:shadow-[0_0_0_3px_rgba(168,85,247,0.2)] transition-all placeholder:text-slate-600"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full neon-glow-btn text-white font-black uppercase tracking-wider px-8 py-4 rounded-xl flex items-center justify-center gap-2 border border-purple-300/40 cursor-pointer text-sm"
+                >
+                  Continue to Payment
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </form>
+            )}
+
+            {/* STEP 2 — Whop Checkout */}
+            {step === 2 && (
+              <div className="space-y-4">
+                <div className="bg-white/95 rounded-2xl p-6 sm:p-8 space-y-4 border-2 border-purple-500 shadow-[0_0_30px_rgba(168,85,247,0.3)]">
+                  <h2 className="text-lg font-black text-[#08030f] uppercase tracking-wide text-center">
+                    Step #2 — <span className="text-purple-600">Complete Payment</span>
+                  </h2>
+                  <EmbeddedCheckout email={email} />
+                  <p className="text-center text-[11px] text-gray-500 font-mono">
+                    All sales are final. Due to the nature of digital products and educational content, no refunds are issued once a purchase is complete.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setStep(1)}
+                  className="w-full text-center text-xs text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  ← Back to Step 1
+                </button>
+              </div>
+            )}
+
           </div>
         </section>
 
