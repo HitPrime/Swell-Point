@@ -28,7 +28,10 @@ const features = [
 function EmbeddedCheckout() {
   return (
     <WhopElements elements={loadWhop()}>
-      <Checkout plan="plan_eE9xzX0T1a7AA">
+      <Checkout
+        plan="plan_eE9xzX0T1a7AA"
+        returnUrl="https://go.getswellpoint.com/unlock-your-video"
+      >
         <CheckoutElement />
       </Checkout>
     </WhopElements>
