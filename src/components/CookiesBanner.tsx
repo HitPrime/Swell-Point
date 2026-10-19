@@ -42,10 +42,7 @@ export const CookiesBanner: React.FC = () => {
           <div className="flex-1 space-y-1">
             <p className="text-sm font-bold text-white">We use cookies</p>
             <p className="text-xs text-slate-400 leading-relaxed">
-              We use cookies to improve your experience, analyze site traffic, and personalize content. By continuing to use this site, you agree to our use of cookies.{' '}
-              <a href="#" className="text-purple-400 hover:text-purple-300 underline underline-offset-2 transition-colors">
-                Learn more
-              </a>
+              We use cookies to improve your experience, analyze site traffic, and personalize content. By continuing to use this site, you agree to our use of cookies.
             </p>
           </div>
 
