@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Zap, Waves } from 'lucide-react';
 import { loadWhop } from '@whop/elements';
 import { Checkout, CheckoutElement, WhopElements } from '@whop/elements-react';
 import logoImg from '../assets/images/Logo.png';
+import { CookiesBanner } from '../components/CookiesBanner';
 
 const features = [
   {
@@ -143,6 +144,8 @@ export const CheckoutPage: React.FC = () => {
           <p className="text-[11px] text-slate-500 font-mono">© 2026 Cassius Cuvée. All rights reserved.</p>
         </div>
       </footer>
+
+      <CookiesBanner />
 
     </div>
   );

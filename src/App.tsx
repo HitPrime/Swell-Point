@@ -6,6 +6,7 @@ import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { FooterSection } from './components/FooterSection';
 import { StarterKitModal } from './components/StarterKitModal';
+import { CookiesBanner } from './components/CookiesBanner';
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,6 +43,8 @@ export default function App() {
         onClose={() => setIsModalOpen(false)}
         initialModule={null}
       />
+
+      <CookiesBanner />
     </div>
   );
 }
