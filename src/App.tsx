@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { ChartSection } from './components/ChartSection';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { FooterSection } from './components/FooterSection';
@@ -29,7 +30,7 @@ export default function App() {
 
         <ChartSection />
 
-        {/* <TestimonialsSection onOpenLeadModal={handlePurchase} /> */}
+        <TestimonialsSection onOpenLeadModal={handlePurchase} />
 
         <FinalCTASection onOpenLeadModal={handlePurchase} />
 
