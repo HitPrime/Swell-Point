@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HelpCircle, Sparkles, ChevronDown } from 'lucide-react';
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, m } from 'motion/react';
 import { FAQS_DATA } from '../data/content';
 
 interface FaqSectionProps {
@@ -23,7 +23,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
-        <motion.div
+        <m.div
           className="text-center space-y-4 mb-14"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,14 +42,14 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
           <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto">
             Common questions about the Swell Point Indicator answered clearly.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* FAQ Accordion */}
         <div className="space-y-3">
           {FAQS_DATA.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -69,19 +69,19 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
                   <span className="font-extrabold text-sm sm:text-base text-white tracking-wider uppercase font-sans group-hover:text-purple-300 transition-colors">
                     {faq.q}
                   </span>
-                  <motion.div
+                  <m.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.15 }}
                     className="shrink-0"
                   >
                     <ChevronDown className={`w-5 h-5 transition-colors ${isOpen ? 'text-purple-400' : 'text-slate-500'}`} />
-                  </motion.div>
+                  </m.div>
                 </button>
 
                 {/* Answer — animated slide down */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
-                    <motion.div
+                    <m.div
                       key="answer"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
@@ -94,16 +94,16 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
                           {faq.a}
                         </p>
                       </div>
-                    </motion.div>
+                    </m.div>
                   )}
                 </AnimatePresence>
-              </motion.div>
+              </m.div>
             );
           })}
         </div>
 
         {/* CTA Banner inside FAQ section */}
-        <motion.div
+        <m.div
           className="mt-12 text-center p-8 rounded-2xl bg-gradient-to-r from-purple-950/60 via-indigo-950/40 to-purple-950/60 border border-purple-500/30 shadow-xl space-y-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenLeadModal }) => {
               <span>GET SWELL POINT INDICATOR</span>
             </button>
           </div>
-        </motion.div>
+        </m.div>
 
       </div>
     </section>

@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://buyswellpoint.com/swell-point" />
     <meta property="og:title" content="Swell Point Indicator | Structured Trading Education" />
     <meta property="og:description" content="A structured educational tool built to help traders develop a clear, repeatable approach to reading market conditions. Instant access." />
-    <meta property="og:image" content="/assets/Logo-CqWu5qI2.png" />
+    <meta property="og:image" content="/src/assets/images/Logo.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -22,7 +22,12 @@
     <meta name="twitter:description" content="A structured educational tool built to help traders develop a clear, repeatable approach to reading market conditions." />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/src/assets/images/Logo.png" />
+    <link rel="icon" type="image/png" href="/src/assets/images/favicon.png" />
+
+    <!-- Preload LCP chart image so it starts downloading before the JS renders it (keep in sync with ChartSection) -->
+    <link rel="preload" as="image" fetchpriority="high"
+      imagesrcset="/src/assets/images/chart-640.webp 640w, /src/assets/images/chart-1024.webp 1024w, /src/assets/images/chart-1692.webp 1692w"
+      imagesizes="(min-width: 1024px) 958px, calc(100vw - 32px)" />
   </head>
   <body>
     <div id="root"></div>

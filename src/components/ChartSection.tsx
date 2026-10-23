@@ -1,5 +1,7 @@
 import React from 'react';
-import chartImage from '../assets/images/chart screenshot2.png';
+import chart640 from '../assets/images/chart-640.webp';
+import chart1024 from '../assets/images/chart-1024.webp';
+import chart1692 from '../assets/images/chart-1692.webp';
 
 export const ChartSection: React.FC = () => {
   return (
@@ -30,7 +32,13 @@ export const ChartSection: React.FC = () => {
           <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#06020c] to-transparent pointer-events-none z-10" />
 
           <img
-            src={chartImage}
+            src={chart1692}
+            srcSet={`${chart640} 640w, ${chart1024} 1024w, ${chart1692} 1692w`}
+            // Keep in sync with the preload in index.html
+            sizes="(min-width: 1024px) 958px, calc(100vw - 32px)"
+            width={1692}
+            height={1069}
+            fetchPriority="high"
             alt="Swell Point Indicator — Live Chart Example"
             className="w-full h-auto block group-hover:scale-[1.01] transition-transform duration-700"
           />

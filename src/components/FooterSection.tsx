@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '../assets/images/Logo.png';
+import logoImg from '../assets/images/logo.webp';
 
 export const FooterSection: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ export const FooterSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
 
         {/* Logo */}
-        <img src={logoImg} alt="Trade Structure Pro" className="h-16 w-auto object-contain" />
+        <img src={logoImg} alt="Trade Structure Pro" width={404} height={192} loading="lazy" decoding="async" className="h-16 w-auto object-contain" />
 
         {/* Disclaimer */}
         <p className="text-[10px] leading-snug max-w-2xl text-center font-mono">

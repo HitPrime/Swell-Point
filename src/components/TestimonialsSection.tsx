@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { m } from 'motion/react';
 import { Info, Quote } from 'lucide-react';
 
 interface TestimonialsSectionProps {
@@ -27,7 +27,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Headline */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -50,12 +50,12 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
           <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
             Real feedback from members learning the Swell Point framework.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Quote Cards */}
         <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
           {quotes.map((q, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
                 </div>
               </div>
             </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 

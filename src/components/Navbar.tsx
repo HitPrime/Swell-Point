@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
-import logoImg from '../assets/images/Logo.png';
+import logoImg from '../assets/images/logo.webp';
 
 interface NavbarProps {
   onOpenLeadModal: () => void;
@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <div className="flex items-center">
-          <img src={logoImg} alt="Cassius Cuvee" className="h-16 w-auto object-contain" />
+          <img src={logoImg} alt="Cassius Cuvee" width={404} height={192} className="h-16 w-auto object-contain" />
         </div>
 
         {/* Header Action Button */}

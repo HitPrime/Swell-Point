@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Zap, Waves } from 'lucide-react';
 import { loadWhop } from '@whop/elements';
 import { Checkout, CheckoutElement, WhopElements } from '@whop/elements-react';
-import logoImg from '../assets/images/Logo.png';
+import logoImg from '../assets/images/logo.webp';
 import { CookiesBanner } from '../components/CookiesBanner';
 
 const features = [
@@ -46,7 +46,7 @@ export const CheckoutPage: React.FC = () => {
       {/* ── NAVBAR ── */}
       <header className="sticky top-0 z-40 w-full bg-[#08030f]/90 backdrop-blur-md border-b border-purple-900/40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-center py-2">
-          <img src={logoImg} alt="Swell Point" className="h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Swell Point" width={404} height={192} className="h-14 w-auto object-contain" />
         </div>
       </header>
 
@@ -134,7 +134,7 @@ export const CheckoutPage: React.FC = () => {
       {/* ── FOOTER ── */}
       <footer className="bg-[#050209] border-t border-purple-900/40 py-10 text-slate-400 font-sans">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 flex flex-col items-center gap-5">
-          <img src={logoImg} alt="Swell Point" className="h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Swell Point" width={404} height={192} className="h-14 w-auto object-contain" />
           <p className="text-[10px] leading-snug max-w-2xl text-center font-mono">
             <strong className="text-white font-bold">Disclaimer.</strong>{' '}
             <span className="text-purple-400">
