@@ -11,15 +11,24 @@
 
     <!-- Open Graph (Facebook / Meta Ads) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://buyswellpoint.com/swell-point" />
+    <meta property="og:site_name" content="Swell Point" />
     <meta property="og:title" content="Swell Point Indicator | Structured Trading Education" />
     <meta property="og:description" content="A structured educational tool built to help traders develop a clear, repeatable approach to reading market conditions. Instant access." />
-    <meta property="og:image" content="/src/assets/images/Logo.png" />
+    <!-- No og:url on purpose: the same build serves getswellpoint.com and buyswellpoint.com, so each shared link keeps its own domain -->
+    <!-- Share image lives in public/ so its URL never changes; Facebook needs an absolute https URL -->
+    <meta property="og:image" content="https://www.getswellpoint.com/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://www.getswellpoint.com/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Swell Point Indicator on a TradingView chart" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Swell Point Indicator | Structured Trading Education" />
     <meta name="twitter:description" content="A structured educational tool built to help traders develop a clear, repeatable approach to reading market conditions." />
+    <meta name="twitter:image" content="https://www.getswellpoint.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Swell Point Indicator on a TradingView chart" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/src/assets/images/favicon.png" />
